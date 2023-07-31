@@ -8,16 +8,25 @@
 </head>
 
 <body>
-	<div class="box">
-		<h1>Ingrese sus datos</h1>
-		<form name="formRegistro" method="post" action="">
-			<label>Nombre: </label> <br>
-			<input type="text" placeholder="Ingrese su nombre"> <br>
-			<label>Apellido: </label> <br>
-			<input type="text" placeholder="Ingrese su apellido"> <br>
-			<label>Contraseña: </label> <br>
-			<input type="password" placeholder="Ingrese una contraseña"> <br>
-			<button class="boton">Guardar</button>
+	<div class="form-container">
+		<h2>Formulario EPS</h2>
+		<form action="procesar_formulario.php" method="POST">
+			<label for="nombre">Nombre:</label>
+			<input type="text" id="nombre" name="nombre">
+			<label for="apellido">Apellido:</label>
+			<input type="text" id="apellido" name="apellido">
+			<label for="genero">Género:</label>
+			<label for="gen1">Masculino: <input type="radio" name="gen1" id="gen1"></label>
+			<label for="gen2">Femenino: <input type="radio" name="gen2" id="gen2"></label>
+			<label for="gen3">Otro: <input type="radio" name="gen3" id="gen3"></label>
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email">
+			<label for="direccion">Dirección:</label>
+			<input type="text" name="direccion" id="direccion">
+			<label for="fechaNac">Fecha de nacimiento:</label>
+			<input type="date" name="fehcaNac" id="fehcaNac">
+			<label for="pregunta">¿A que EPS pertenece?</label>
+			<input type="text">
 		</form>
 	</div>
 </body>

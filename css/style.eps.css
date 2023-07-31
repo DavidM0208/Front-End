@@ -1,18 +1,62 @@
-.box{
-    border: 2px solid black;
-    border-radius: 5px;
-    padding: 0 10px 10px 10px;
-    width: 250px;
-    text-align: center;
-    
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f4f8;
 }
 
-.boton{
-    cursor: pointer;
-    background-color: lightblue;
-    border: 2px none black;
+.form-container {
+    padding: 20px;
+    background-color: #f0f8ff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.form-container h2 {
+    text-align: center;
+    color: #1e3a8a;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container label,
+.form-container input,
+.form-container button {
+    margin: 10px 0;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"] {
+    padding: 8px;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    margin-top: 10px;
-    width: 100px;
-    height: 30px;
+}
+
+.form-container button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.form-container button.save-btn {
+    background-color: #1e3a8a;
+}
+
+.form-container button.cancel-btn {
+    background-color: #d62828;
+}
+
+.home-btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
